@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c4c4c4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    width: 300px;
+    box-shadow: 0 0 8px #0005;
+    padding: 10px;
+    border-radius: 10px;
+    background: #c4c4c4;
+}
+
+.wrapper h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.wrapper .input__box {
+    width: 100%;
+    height: 40px;
+    margin-block-end: 30px;
+    position: relative;
+}
+
+.input__box input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c4c4c4;
+    outline: none;
+    box-shadow: 0 0 4px 1px #0005;
+    border-radius: 45px;
+    padding: 20px 45px 20px 20px;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+.input__box input:focus, .input__box input:active {
+    outline: none;
+    border: 1px solid #0006;
+}
+
+.input__box ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.57);
+}
+
+.wrapper .remember__forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    margin-block-end: 1rem;
+    font-size: 13px;
+}
+
+.remember__forgot input[type="checkbox"] {
+    margin-inline-end: 5px;
+    background-color: transparent;
+    accent-color: #ff4500;
+}
+
+.remember__forgot a {
+    position: relative;
+    text-decoration: none;
+    color: #00000091;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember__forgot a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    background-color: rgba(0, 0, 0, 0.36);
+    transition: all .5s ease-in-out;
+}
+
+.remember__forgot a:hover::before {
+    width: 100%;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 0 8px #0005;
+    background-color: transparent;
+    outline: none;
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-block-end: 1rem;
+    transition: all .4s ease-in-out;
+}
+
+.wrapper button:hover {
+    border: 1px solid #0006;
+    color: #00000091;
+}
+
+.wrapper .both__side__line {
+    text-align: center;
+    margin-block-end: 1rem;
+}
+
+.both__side__line h2 {
+    position: relative;
+    color: #00000091;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.both__side__line h2::before {
+    content: "";
+    position: absolute;
+    height: 0.05rem;
+    width: 60px;
+    background: black;
+    top: 50%;
+    left: 60%;
+}
+
+.both__side__line h2::after {
+    content: "";
+    position: absolute;
+    height: 0.05rem;
+    width: 60px;
+    background: black;
+    top: 50%;
+    right: 60%;
+}
+
+.wrapper .register {
+    text-align: center;
+    margin-block-end: 1rem;
+    font-size: 13px;
+}
+
+.register p {
+    font-size: 15px;
+}
+
+.register a {
+    position: relative;
+    text-decoration: none;
+    color: #00000091;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    background-color: #00000091;
+    transition: all .5s ease-in-out;
+}
+
+.register a:hover::before {
+    width: 20%;
+}
